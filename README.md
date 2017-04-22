@@ -1,6 +1,6 @@
 # npmtest-js-csp
 
-#### basic test coverage for  js-csp (v0.9.2)  [![npm package](https://img.shields.io/npm/v/npmtest-js-csp.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-js-csp) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-js-csp.svg)](https://travis-ci.org/npmtest/node-npmtest-js-csp)
+#### basic test coverage for  [js-csp (v0.9.2)](https://github.com/ubolonton/js-csp#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-js-csp.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-js-csp) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-js-csp.svg)](https://travis-ci.org/npmtest/node-npmtest-js-csp)
 
 #### CSP channels with ES6 generators, inspired by Clojurescript's core.async and Go
 
@@ -35,10 +35,9 @@
 ```json
 
 {
-    "name": "js-csp",
-    "description": "CSP channels with ES6 generators, inspired by Clojurescript's core.async and Go",
-    "version": "0.9.2",
-    "author": "Nguyễn Tuấn Anh <ubolonton@gmail.com>",
+    "author": {
+        "name": "Nguyễn Tuấn Anh"
+    },
     "browserify": {
         "transform": [
             "loose-envify"
@@ -51,6 +50,7 @@
         "babel-runtime": "^6.22.0",
         "lodash": "^4.17.4"
     },
+    "description": "CSP channels with ES6 generators, inspired by Clojurescript's core.async and Go",
     "devDependencies": {
         "babel-cli": "^6.22.2",
         "babel-core": "^6.22.1",
@@ -87,6 +87,11 @@
         "transducers.js": "^0.3.2",
         "webpack": "^2.2.1"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "19dd97965942694098db095beb632b2a95139214",
+        "tarball": "https://registry.npmjs.org/js-csp/-/js-csp-0.9.2.tgz"
+    },
     "engines": {
         "node": ">= 4.1.0",
         "npm": ">=3.0.0"
@@ -99,6 +104,8 @@
         "CHANGELOG.md",
         "README.md"
     ],
+    "gitHead": "0388e5e6b1455bdfc60d8f68f4f6f30e37f7afb0",
+    "homepage": "https://github.com/ubolonton/js-csp#readme",
     "jsnext:main": "./es/csp.js",
     "keywords": [
         "async",
@@ -119,10 +126,20 @@
         "url": "https://github.com/ubolonton/js-csp/raw/master/LICENSE"
     },
     "main": "./lib/csp.js",
+    "maintainers": [
+        {
+            "name": "colorvisa"
+        },
+        {
+            "name": "ubolonton"
+        }
+    ],
     "module": "./es/csp.js",
+    "name": "js-csp",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/ubolonton/js-csp.git"
+        "url": "git+https://github.com/ubolonton/js-csp.git"
     },
     "scripts": {
         "babel:es": "babel -d es src",
@@ -140,7 +157,9 @@
         "test": "mocha",
         "test:coverage": "istanbul cover node_modules/mocha/bin/_mocha",
         "test:watch": "mocha --watch --reporter progress"
-    }
+    },
+    "version": "0.9.2",
+    "bin": {}
 }
 ```
 
